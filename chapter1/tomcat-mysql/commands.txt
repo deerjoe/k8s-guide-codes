@@ -1,0 +1,10 @@
+
+sudo kubectl create -f /vagrant/mysql-rc.yaml 
+sudo docker ps
+sudo kubectl get rc
+sudo kubectl get pod
+sudo kubectl create -f /vagrant/mysql-svc.yaml
+sudo kubectl get svc
+
+sudo kubectl create -f /vagrant/myweb-rc.yaml 
+sudo kubectl create -f /vagrant/myweb-svc.yaml 
